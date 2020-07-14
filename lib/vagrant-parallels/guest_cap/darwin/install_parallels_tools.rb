@@ -10,7 +10,7 @@ module VagrantPlugins
               machine.env.root_path
             )
             remote_file = '/tmp/prl-tools-mac.iso'
-            mount_point = "/media/prl-tools-lin_#{rand(100000)}/"
+            mount_point = "/tmp/prl-tools-mac_#{rand(100000)}/"
 
             comm.upload(tools_iso_path, remote_file)
 
